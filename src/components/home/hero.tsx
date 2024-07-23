@@ -16,7 +16,7 @@ export const Hero = () => {
       </div>
       <div>
         <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-5xl mb-4">
-          Hi, I'm Artem
+          Hi, I&apos;m Artem
         </h1>
         <p className="text-xl text-muted-foreground mb-4">
           Detail-oriented Software Engineer dedicated to building high-quality
