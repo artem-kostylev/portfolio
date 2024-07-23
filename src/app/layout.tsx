@@ -3,7 +3,8 @@ import "@/assets/css/tailwind.css";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/providers/theme-provider";
 import { ThemeSwitch } from "@/components/common/theme-switch";
-import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   title: "Artem Kostylev",
@@ -32,6 +33,7 @@ export default function RootLayout({
           <ThemeSwitch />
           <main role="main">{children}</main>
           <Analytics />
+          <SpeedInsights />
         </ThemeProvider>
       </body>
     </html>
