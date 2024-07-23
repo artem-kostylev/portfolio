@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import "@/assets/css/tailwind.css";
-import { ThemeProvider } from "@/providers/theme-provider";
 import { cn } from "@/lib/utils";
+import { ThemeProvider } from "@/providers/theme-provider";
 import { ThemeSwitch } from "@/components/common/theme-switch";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "Artem Kostylev",
@@ -30,6 +31,7 @@ export default function RootLayout({
         >
           <ThemeSwitch />
           <main role="main">{children}</main>
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
