@@ -11,7 +11,7 @@ export const Skills = () => {
         <Badge variant="secondary">Node.js</Badge>
         <Badge variant="secondary">HTML</Badge>
         <Badge variant="secondary">CSS</Badge>
-        <Badge variant="secondary">shadcn/ui</Badge>
+        <Badge variant="secondary">Shadcn/ui</Badge>
         <Badge variant="secondary">NestJS</Badge>
         <Badge variant="secondary">Vue</Badge>
         <Badge variant="secondary">Nuxt</Badge>
