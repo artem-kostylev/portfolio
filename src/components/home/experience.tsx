@@ -1,11 +1,11 @@
 import {
   Card,
-  CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import Image from "next/image";
 
 const companies = [
   {
@@ -43,9 +43,17 @@ export const Experience = () => {
           <Card key={company.name}>
             <CardHeader className="p-4">
               <div className="flex items-center space-x-4">
-                <Avatar>
+                <Avatar className="w-11 h-11">
                   <AvatarFallback>{company.name.charAt(0)}</AvatarFallback>
-                  <AvatarImage src={company.image} />
+                  <AvatarImage src={company.image} asChild>
+                    <Image
+                      src={company.image}
+                      alt={company.name}
+                      className="w-full h-full"
+                      sizes="44px"
+                      fill
+                    />
+                  </AvatarImage>
                 </Avatar>
                 <div className="w-full">
                   <div className="flex items-center justify-between gap-2.5 mb-1">
