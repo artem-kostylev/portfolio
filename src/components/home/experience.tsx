@@ -64,7 +64,7 @@ export const Experience = () => {
                       {company.period}
                     </p>
                   </div>
-                  <CardDescription>{company.period}</CardDescription>
+                  <CardDescription>{company.position}</CardDescription>
                 </div>
               </div>
             </CardHeader>
