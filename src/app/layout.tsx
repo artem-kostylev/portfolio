@@ -7,9 +7,39 @@ import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://kostylev.dev"),
   title: "Artem Kostylev",
   description:
-    "Detail-oriented Software Engineer dedicated to building high-quality products.",
+    "Detail-oriented Software Engineer dedicated to building high-quality products",
+  openGraph: {
+    title: "Artem Kostylev",
+    type: "website",
+    url: "/",
+    images: [
+      {
+        url: "/images/preview.png",
+        width: 1200,
+        height: 630,
+        alt: "Artem Kostylev",
+      },
+    ],
+    siteName: "Artem Kostylev",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Artem Kostylev",
+    description:
+      "Detail-oriented Software Engineer dedicated to building high-quality products",
+    images: [
+      {
+        url: "/images/preview.png",
+        width: 1200,
+        height: 630,
+        alt: "Artem Kostylev",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
