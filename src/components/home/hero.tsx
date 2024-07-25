@@ -2,7 +2,6 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Linkedin, Github, Mail } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import Link from "next/link";
 
 export const Hero = () => {
   return (
@@ -29,20 +28,20 @@ export const Hero = () => {
         </p>
         <div className="flex items-center">
           <Button className="mr-4" asChild>
-            <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
               Resume
-            </Link>
+            </a>
           </Button>
           <div className="space-x-1">
             <Button variant="ghost" size="icon" asChild>
-              <Link
+              <a
                 href="https://www.linkedin.com/in/artem-kostylev/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Linkedin icon"
               >
                 <Linkedin className="size-6" strokeWidth={1.4} />
-              </Link>
+              </a>
             </Button>
             <Button variant="ghost" size="icon" asChild>
               <a
