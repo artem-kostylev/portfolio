@@ -27,7 +27,7 @@ export const Hero = () => {
           products.
         </p>
         <div className="flex items-center space-x-1 -ml-2">
-          <Button variant="ghost" size="icon" asChild>
+          <Button variant="ghost" asChild>
             <a
               href="https://www.linkedin.com/in/artem-kostylev/"
               target="_blank"
@@ -35,9 +35,10 @@ export const Hero = () => {
               aria-label="Linkedin icon"
             >
               <Linkedin className="size-6" strokeWidth={1.4} />
+              <span className="ml-2">artem-kostylev</span>
             </a>
           </Button>
-          <Button variant="ghost" size="icon" asChild>
+          <Button variant="ghost" asChild>
             <a
               href="https://github.com/artem-kostylev"
               target="_blank"
@@ -45,11 +46,13 @@ export const Hero = () => {
               aria-label="Github icon"
             >
               <Github className="size-6" strokeWidth={1.4} />
+              <span className="ml-2">artem-kostylev</span>
             </a>
           </Button>
-          <Button variant="ghost" size="icon" asChild>
+          <Button variant="ghost" asChild>
             <a href="mailto:kostylev.dev@gmail.com" aria-label="Email icon">
               <Mail className="size-6" strokeWidth={1.4} />
+              <span className="ml-2">kostylev.dev@gmail.com</span>
             </a>
           </Button>
         </div>
