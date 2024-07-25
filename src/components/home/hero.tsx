@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Linkedin, Github, Mail } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import Link from "next/link";
 
 export const Hero = () => {
   return (
@@ -26,35 +27,39 @@ export const Hero = () => {
           Detail-oriented Software Engineer dedicated to building high-quality
           products.
         </p>
-        <div className="flex items-center space-x-1 -ml-2">
-          <Button variant="ghost" asChild>
-            <a
-              href="https://www.linkedin.com/in/artem-kostylev/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Linkedin icon"
-            >
-              <Linkedin className="size-6" strokeWidth={1.4} />
-              <span className="ml-2">artem-kostylev</span>
-            </a>
+        <div className="flex items-center">
+          <Button className="mr-4" asChild>
+            <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+              Resume
+            </Link>
           </Button>
-          <Button variant="ghost" asChild>
-            <a
-              href="https://github.com/artem-kostylev"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Github icon"
-            >
-              <Github className="size-6" strokeWidth={1.4} />
-              <span className="ml-2">artem-kostylev</span>
-            </a>
-          </Button>
-          <Button variant="ghost" asChild>
-            <a href="mailto:kostylev.dev@gmail.com" aria-label="Email icon">
-              <Mail className="size-6" strokeWidth={1.4} />
-              <span className="ml-2">kostylev.dev@gmail.com</span>
-            </a>
-          </Button>
+          <div className="space-x-1">
+            <Button variant="ghost" size="icon" asChild>
+              <Link
+                href="https://www.linkedin.com/in/artem-kostylev/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Linkedin icon"
+              >
+                <Linkedin className="size-6" strokeWidth={1.4} />
+              </Link>
+            </Button>
+            <Button variant="ghost" size="icon" asChild>
+              <a
+                href="https://github.com/artem-kostylev"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Github icon"
+              >
+                <Github className="size-6" strokeWidth={1.4} />
+              </a>
+            </Button>
+            <Button variant="ghost" size="icon" asChild>
+              <a href="mailto:kostylev.dev@gmail.com" aria-label="Email icon">
+                <Mail className="size-6" strokeWidth={1.4} />
+              </a>
+            </Button>
+          </div>
         </div>
       </div>
     </section>
