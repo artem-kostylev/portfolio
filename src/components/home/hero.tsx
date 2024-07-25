@@ -5,8 +5,8 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 export const Hero = () => {
   return (
-    <section id="hero" className="flex flex-col space-y-8">
-      <Avatar className="w-32 h-32">
+    <section id="hero">
+      <Avatar className="w-28 h-28 mb-6">
         <AvatarFallback>AK</AvatarFallback>
         <AvatarImage src="/images/avatar.jpeg" asChild>
           <Image
