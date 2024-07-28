@@ -3,7 +3,7 @@ export const companies = [
     name: "Biblio Globus",
     period: "May 2022 - Present",
     image: "/images/companies/bg.jpeg",
-    position: "Frontend Developer",
+    position: "Software Engineer",
     about:
       "A well-known Russian tour operator specializing in providing comprehensive travel services, similar in functionality to Booking.com",
     responsibilities: [
