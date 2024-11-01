@@ -28,7 +28,11 @@ export const Hero = () => {
         </p>
         <div className="flex items-center">
           <Button className="mr-4" asChild>
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+            <a
+              href="/artem-kostylev.docx"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Resume
             </a>
           </Button>
