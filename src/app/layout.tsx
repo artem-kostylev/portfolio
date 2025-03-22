@@ -9,6 +9,9 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 export const metadata: Metadata = {
   metadataBase: new URL("https://kostylev.dev"),
   title: "Artem Kostylev",
+  verification: {
+    yandex: "ca0aed9d1084125e",
+  },
   description:
     "Detail-oriented Software Engineer dedicated to building high-quality products",
   openGraph: {
